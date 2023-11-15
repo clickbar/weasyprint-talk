@@ -1,0 +1,114 @@
+html {
+    font-size: 10pt;
+    font-family: "Inter", sans-serif;
+}
+
+@media print {
+    @page {
+        size: A4;
+        /*Neue Margins*/
+        margin: 3cm 1.5cm 3cm 1.5cm;
+        @top-left-corner {
+            content: element(header);
+        }
+        @bottom-left-corner {
+            content: element(footer);
+        }
+    }
+}
+
+/*top-left-corner*/
+footer {
+    background: linear-gradient(121deg, #3b82f6 40%, #183666 110%);
+    position: running(footer);
+    width: 210mm;
+    height: 3cm;
+    bottom: 0;
+}
+
+footer > div {
+    padding: 5mm 10mm 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header {
+    width: 210mm;
+    background: linear-gradient(121deg,#3b82f6 40%, #183666 110%);
+    height: 3cm;
+    position: running(header);
+}
+
+.text-xs {
+    font-size: 8pt;
+}
+
+.text-2xs {
+    font-size: 7pt;
+}
+
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.text-primary-500 {
+    color: #3b82f6;
+}
+
+.text-secondary-600 {
+    color: #3b82f6;
+}
+
+.ml-\[2cm\] {
+    margin-left: 2cm;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-extrabold {
+    font-weight: 900;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-white {
+    color: white;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}

@@ -1,0 +1,74 @@
+html {
+    font-size: 10pt;
+    font-family: "Inter", sans-serif;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 2.5cm;
+    }
+}
+
+/*ToDo*/
+
+/*TailwindCss-like classes*/
+.flex {
+    display: flex;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-xs {
+    font-size: 6pt;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.text-primary-500 {
+    color: #3b82f6;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-extrabold {
+    font-weight: 900;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-white {
+    color: white;
+}
+
+.line-clamp-1 {
+    line-clamp: 1
+}
+
+.ml-\[2cm\] {
+    margin-left: 2cm;
+}
